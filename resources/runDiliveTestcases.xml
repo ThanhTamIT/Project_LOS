@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="LMS">
+<parameter name="url" value="http://dev-dsa.shbfinance.com.vn/sysshbf/en/neoclassic/login/login" />
+
+  <listeners>
+    <listener class-name="commons.MethodListener" />
+    <listener class-name="reportconfig.ReportNGListener" />
+    <listener class-name="reportconfig.ExtentTestListener" />
+  </listeners>
+
+  <test name="Run ON CHROME">
+  <parameter name="brower" value="chrome" />
+    <classes>
+       <class name="com.los.newcase.CreateNewCase"/>            
+    </classes>
+  </test> 
+</suite> 
